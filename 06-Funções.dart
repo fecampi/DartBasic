@@ -1,16 +1,21 @@
 void main() {
   //Função sem parametro e sem retorno
   printNome();
+
   //Função com parametro e sem retorno
   calcSoma(20.0, 10.0);
   double res = calcMult(10.0, 15.0);
   print(res);
+
   //Função - Arrow function
   print(calcAreaCirculo(5.0));
+
   //Parametros Opcionais
   opcional("valor A", valorC: "valor C");
+
   //Funções como parametro
   funcParams(printNome);
+
   //Função Anonima
   funcParams(() {
     print("Bem vindo outra pessoa sem ser o Felipe");
@@ -36,6 +41,8 @@ double calcMult(double a, double b) {
 
 //Função - Arrow function
 double calcAreaCirculo(double raio) => 3.14 * raio * raio;
+
+
 
 //Parametros Opcionais
 void opcional(String valorA,
